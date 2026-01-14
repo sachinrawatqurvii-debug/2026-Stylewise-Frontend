@@ -285,7 +285,7 @@ const generateNykaaSweatShirtListing = (selectedData) => {
 
     const csvData = selectedData
         // .filter((product) => product.styleType === "Shirt" || product.styleType === "shirt")
-        .filter((product) => product.styleType?.toLowerCase()?.trim() === "shirt" || product.styleType?.toLowerCase()?.trim() === "sweatshirt")
+        .filter((product) => product.styleType?.toLowerCase()?.trim() === "sweatshirt")
         .flatMap((product) =>
             sizes.map((size) => {
                 const mappedSize = sizeMapping[size]; // Convert size to 2XL, 3XL, etc.

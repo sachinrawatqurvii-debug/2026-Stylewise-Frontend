@@ -215,7 +215,7 @@ const generateNykaaShirtListing = (selectedData) => {
     const sizes = Object.keys(sizeMapping); // ["XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL", "XXXXXL"]
 
     const csvData = selectedData
-        .filter((product) => product.styleType?.toLowerCase()?.trim() === product.styleType === "shirt")
+        .filter((product) => product.styleType?.toLowerCase()?.trim() === "shirt")
         // .filter((product) => product.styleType?.toLowerCase()?.trim() === "shirt" || product.styleType?.toLowerCase()?.trim() === "sweatshirt")
         .flatMap((product) =>
             sizes.map((size) => {
